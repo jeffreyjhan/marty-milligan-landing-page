@@ -3,25 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Martin Milligan | AI Adoption Consultant | Digital Onramp WSI</title>
-    <meta name="description" content="Martin Milligan helps businesses adopt AI to cut costs, automate workflows, and drive measurable growth. 30 years of consulting expertise backed by WSI's global network.">
+    <title>Complex Collective | YouTube Growth Agency for Coaches & Consultants</title>
+    <meta name="description" content="Premium YouTube growth agency for coaches and consultants doing $50k+/month. We make you the authority your market can't ignore.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Navigation -->
+    <!-- ========== NAVIGATION ========== -->
     <nav class="nav" id="nav">
         <div class="nav-inner">
-            <a href="#" class="nav-logo">Digital Onramp <span>WSI</span></a>
+            <a href="#" class="nav-logo">
+                <svg class="nav-logo-icon" viewBox="-15 -15 230 230" width="36" height="36">
+                    <ellipse cx="100" cy="100" rx="90" ry="38" fill="none" stroke="#3A3D52" stroke-width="3" transform="rotate(-30 100 100)"/>
+                    <ellipse cx="100" cy="100" rx="90" ry="38" fill="none" stroke="#8B5CF6" stroke-width="3" transform="rotate(30 100 100)" opacity="0.5"/>
+                    <ellipse cx="100" cy="100" rx="90" ry="38" fill="none" stroke="#8B5CF6" stroke-width="3" transform="rotate(90 100 100)" opacity="0.3"/>
+                    <circle cx="100" cy="100" r="34" fill="#8B5CF6"/>
+                    <polygon points="91,83 91,117 118,100" fill="#FFFFFF"/>
+                    <circle cx="174" cy="58" r="7" fill="#8B5CF6"/><circle cx="174" cy="58" r="12" fill="#8B5CF6" opacity="0.15"/>
+                    <circle cx="26" cy="142" r="6" fill="#3B82F6"/><circle cx="26" cy="142" r="10" fill="#3B82F6" opacity="0.15"/>
+                    <circle cx="100" cy="10" r="5" fill="#A78BFA"/>
+                </svg>
+                <span class="nav-logo-text">Complex <span class="logo-accent">Collective</span></span>
+            </a>
             <div class="nav-links">
+                <a href="#problem">Why YouTube</a>
+                <a href="#how">How It Works</a>
+                <a href="#results">Results</a>
                 <a href="#about">About</a>
-                <a href="#outcomes">Outcomes</a>
-                <a href="#services">How It Works</a>
-                <a href="#contact">Contact</a>
-                <a href="#book" class="nav-cta">Book a Call</a>
+                <a href="https://calendly.com/jeffrey-complexcollective/intro" target="_blank" class="nav-cta">Book a Call</a>
             </div>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
                 <span></span>
@@ -33,258 +45,391 @@
 
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
+        <a href="#problem">Why YouTube</a>
+        <a href="#how">How It Works</a>
+        <a href="#results">Results</a>
         <a href="#about">About</a>
-        <a href="#outcomes">Outcomes</a>
-        <a href="#services">How It Works</a>
-        <a href="#contact">Contact</a>
-        <a href="#book" class="nav-cta">Book a Call</a>
+        <a href="https://calendly.com/jeffrey-complexcollective/intro" target="_blank" class="nav-cta">Book a Call</a>
     </div>
 
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero-video-wrapper">
-            <video class="hero-video" id="heroVideo" autoplay loop muted playsinline>
-                <source src="hf_20260320_052137_2e33e234-4f67-45fa-a0fc-d2821fba047f.mp4" type="video/mp4">
-            </video>
+    <!-- ========== INTRO SEQUENCE ========== -->
+    <div class="intro-overlay" id="introOverlay">
+        <canvas class="intro-canvas" id="introCanvas"></canvas>
+        <div class="intro-flash" id="introFlash"></div>
+        <div class="intro-content" id="introContent">
+            <!-- Animated Orbital brand mark -->
+            <div class="intro-ring" id="introRing">
+                <svg viewBox="-15 -15 230 230" class="intro-ring-svg">
+                    <!-- Orbit ring 1 -->
+                    <ellipse cx="100" cy="100" rx="90" ry="38" class="intro-orbit intro-orbit-1" fill="none" stroke="#3A3D52" stroke-width="2" transform="rotate(-30 100 100)"/>
+                    <!-- Orbit ring 2 -->
+                    <ellipse cx="100" cy="100" rx="90" ry="38" class="intro-orbit intro-orbit-2" fill="none" stroke="#8B5CF6" stroke-width="2" transform="rotate(30 100 100)" opacity="0.5"/>
+                    <!-- Orbit ring 3 -->
+                    <ellipse cx="100" cy="100" rx="90" ry="38" class="intro-orbit intro-orbit-3" fill="none" stroke="#8B5CF6" stroke-width="2" transform="rotate(90 100 100)" opacity="0.3"/>
+                    <!-- Center play circle -->
+                    <circle cx="100" cy="100" r="34" class="intro-ring-inner" />
+                    <!-- Play button -->
+                    <polygon points="91,83 91,117 118,100" class="intro-ring-dot" fill="#FFFFFF"/>
+                    <!-- Satellites -->
+                    <circle cx="174" cy="58" r="7" class="intro-sat intro-sat-1" fill="#8B5CF6"/>
+                    <circle cx="174" cy="58" r="12" class="intro-sat intro-sat-1-glow" fill="#8B5CF6" opacity="0"/>
+                    <circle cx="26" cy="142" r="6" class="intro-sat intro-sat-2" fill="#3B82F6"/>
+                    <circle cx="26" cy="142" r="10" class="intro-sat intro-sat-2-glow" fill="#3B82F6" opacity="0"/>
+                    <circle cx="100" cy="10" r="5" class="intro-sat intro-sat-3" fill="#A78BFA"/>
+                    <circle cx="100" cy="10" r="9" class="intro-sat intro-sat-3-glow" fill="#A78BFA" opacity="0"/>
+                </svg>
+            </div>
+            <!-- Brand text slam -->
+            <div class="intro-text" id="introText">
+                <span class="intro-word intro-word-1">COMPLEX</span>
+                <span class="intro-word intro-word-2">COLLECTIVE</span>
+            </div>
+            <!-- Tagline -->
+            <div class="intro-tagline" id="introTagline">YouTube Growth Agency</div>
         </div>
+        <button class="intro-skip" id="introSkip">Skip <span>&rarr;</span></button>
+        <!-- Horizontal wipe panels -->
+        <div class="intro-wipe intro-wipe-left" id="wipeLeft"></div>
+        <div class="intro-wipe intro-wipe-right" id="wipeRight"></div>
+    </div>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+        <canvas class="hero-canvas" id="heroCanvas"></canvas>
+
+        <div class="hero-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+
+        <div class="hero-grid"></div>
+        <div class="hero-vignette"></div>
+
         <div class="hero-content">
-            <p class="hero-eyebrow reveal">AI Adoption Consultant</p>
+            <p class="hero-eyebrow">YouTube Growth for Coaches & Consultants</p>
             <h1 class="hero-title">
-                <span class="hero-line reveal">Your Competitors</span>
-                <span class="hero-line reveal" style="animation-delay: 0.15s">Are Already Using AI.</span>
+                <span class="hero-line">Stop Chasing Leads.</span>
+                <span class="hero-line"><span class="gradient-text">Attract Them.</span></span>
             </h1>
-            <p class="hero-subtitle reveal" style="animation-delay: 0.3s">Businesses that adopt AI reduce operating costs by up to 40% and close deals 3x faster. Stop falling behind. Start leading.</p>
-            <div class="hero-actions reveal" style="animation-delay: 0.45s">
-                <a href="#book" class="btn btn-primary">Get Your AI Roadmap</a>
-                <a href="#outcomes" class="btn btn-ghost">See the Results</a>
+            <p class="hero-subtitle">We build YouTube channels that position you as the #1 authority in your niche so clients come to you pre-sold, without ads or cold outreach.</p>
+            <div class="hero-actions">
+                <a href="https://calendly.com/jeffrey-complexcollective/intro" target="_blank" class="btn btn-primary">Book a Strategy Call</a>
+                <a href="#how" class="btn btn-ghost">See How It Works</a>
             </div>
         </div>
-        <div class="hero-scroll-indicator reveal" style="animation-delay: 0.6s">
+
+        <div class="hero-scroll">
             <span>Scroll</span>
             <div class="scroll-line"></div>
         </div>
     </section>
 
-    <!-- Book a Call Section -->
-    <section class="section section-book" id="book">
+    <!-- ========== PROBLEM / AGITATION ========== -->
+    <section class="section section-mid" id="problem">
         <div class="container">
-            <div class="book-grid">
-                <div class="book-text fade-up">
-                    <p class="section-eyebrow">Free AI Assessment</p>
-                    <h2 class="section-title">Find Out Where AI<br>Fits Your Business</h2>
-                    <p class="book-desc">In 30 minutes, we'll identify the highest-impact AI opportunities in your business. The ones that save time, cut costs, and generate revenue. No jargon, no pressure.</p>
-                    <div class="book-points">
-                        <div class="book-point">
-                            <span class="book-point-icon">&#10003;</span>
-                            <span>Pinpoint which tasks AI can automate today</span>
-                        </div>
-                        <div class="book-point">
-                            <span class="book-point-icon">&#10003;</span>
-                            <span>Get a clear ROI estimate before you invest</span>
-                        </div>
-                        <div class="book-point">
-                            <span class="book-point-icon">&#10003;</span>
-                            <span>Walk away with a prioritized action plan</span>
-                        </div>
-                    </div>
+            <div class="problem-grid">
+                <div>
+                    <p class="eyebrow reveal">The Problem</p>
+                    <h2 class="section-title reveal reveal-delay-1">Every Channel You're Using Dies When You Stop Feeding It.</h2>
+                    <p class="section-subtitle reveal reveal-delay-2">Ads need spend. Cold outreach needs reps. Social needs daily posts. The moment you stop, the leads stop. You're renting attention on someone else's terms.</p>
                 </div>
-                <div class="book-embed fade-up">
-                    <div class="calendly-inline-widget" data-url="https://calendly.com/jeffrey-complexcollective/intro?hide_gdpr_banner=1" style="min-width:320px;height:660px;"></div>
+                <div class="problem-statements">
+                    <div class="problem-item problem-dead reveal" style="--seq: 0">
+                        <h3>Paid Ads</h3>
+                        <p>Turn off the budget, turn off the leads. You're paying rent on someone else's platform, and the price goes up every year.</p>
+                    </div>
+                    <div class="problem-item problem-dead reveal reveal-delay-1" style="--seq: 1">
+                        <h3>Cold Outreach</h3>
+                        <p>It works until your team stops dialing. Every month starts at zero. You're building pipeline, not an asset.</p>
+                    </div>
+                    <div class="problem-item problem-dead reveal reveal-delay-2" style="--seq: 2">
+                        <h3>Social Media</h3>
+                        <p>Post every day and pray the algorithm likes you this week. Miss a few days? You're invisible.</p>
+                    </div>
+                    <div class="problem-item problem-alive reveal reveal-delay-3" style="--seq: 3">
+                        <h3>YouTube</h3>
+                        <p>A video you post today can generate leads in 2027. It compounds. It ranks. It sells while you sleep. That's the difference.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Outcomes Section -->
-    <section class="section section-results" id="outcomes">
+    <!-- ========== SOLUTION ========== -->
+    <section class="section section-dark" id="solution">
         <div class="container">
-            <div class="section-header">
-                <p class="section-eyebrow fade-up">What AI Does For Your Business</p>
-                <h2 class="section-title fade-up">The Outcomes<br>Speak for Themselves</h2>
+            <div class="solution-header">
+                <p class="eyebrow reveal">What We Build</p>
+                <h2 class="section-title reveal reveal-delay-1">Your YouTube Channel Becomes Your Best Salesperson.</h2>
+                <p class="section-subtitle reveal reveal-delay-2">We handle strategy, scripting, editing, and optimization. You show up and film. That's it.</p>
+            </div>
+            <div class="solution-cards-wrapper">
+                <canvas class="solution-canvas" id="solutionCanvas"></canvas>
+            <div class="solution-cards">
+                <div class="solution-card reveal">
+                    <div class="solution-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                    </div>
+                    <h3>Authority Positioning</h3>
+                    <p>We craft your content strategy so every video positions you as the go-to expert. Your audience stops scrolling and starts trusting.</p>
+                </div>
+                <div class="solution-card reveal reveal-delay-1">
+                    <div class="solution-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+                    </div>
+                    <h3>Compounding Growth</h3>
+                    <p>Unlike ads that vanish when you stop paying, every video we publish is a permanent asset that keeps working months and years later.</p>
+                </div>
+                <div class="solution-card reveal reveal-delay-2">
+                    <div class="solution-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3>Inbound Leads</h3>
+                    <p>Your ideal clients watch your videos, build trust on their own time, and reach out ready to buy. No convincing required.</p>
+                </div>
+            </div>
+            </div>
+            <div class="section-cta reveal" style="text-align:center; margin-top:56px;">
+                <a href="https://calendly.com/jeffrey-complexcollective/intro" target="_blank" class="btn btn-primary">See If You Qualify</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== HOW IT WORKS ========== -->
+    <section class="section section-mid" id="how">
+        <div class="container">
+            <div class="steps-header">
+                <p class="eyebrow reveal">How It Works</p>
+                <h2 class="section-title reveal reveal-delay-1">Three Steps. Fully Managed.</h2>
+                <p class="section-subtitle reveal reveal-delay-2">You bring the expertise. We build the machine around it.</p>
+            </div>
+            <div class="steps" id="stepsContainer">
+                <div class="step reveal" data-step="1">
+                    <div class="step-number">1</div>
+                    <h3>Strategy & Scripting</h3>
+                    <p>We research your niche, map your content angles, and write scripts designed to attract your exact buyer, not random viewers.</p>
+                </div>
+                <div class="step-connector">
+                    <div class="connector-line">
+                        <div class="connector-fill"></div>
+                    </div>
+                </div>
+                <div class="step reveal reveal-delay-1" data-step="2">
+                    <div class="step-number">2</div>
+                    <h3>You Film</h3>
+                    <p>Show up, deliver your expertise on camera. That's your only job. We guide you on delivery, framing, and pacing.</p>
+                </div>
+                <div class="step-connector">
+                    <div class="connector-line">
+                        <div class="connector-fill connector-fill-2"></div>
+                    </div>
+                </div>
+                <div class="step reveal reveal-delay-2" data-step="3">
+                    <div class="step-number">3</div>
+                    <h3>We Handle the Rest</h3>
+                    <p>Editing, thumbnails, titles, SEO, publishing, optimization. Your channel grows while you focus on running your business.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== RESULTS ========== -->
+    <section class="section section-dark" id="results">
+        <div class="container">
+            <div class="results-header">
+                <p class="eyebrow reveal">Proof Over Promise</p>
+                <h2 class="section-title reveal reveal-delay-1">We Show Post-Execution. Not Potential.</h2>
+                <p class="section-subtitle reveal reveal-delay-2">Every number below is from real client channels we built and manage.</p>
             </div>
             <div class="results-grid">
-                <div class="result-card fade-up">
-                    <div class="result-metric">
-                        <span class="result-number">40%</span>
-                        <span class="result-label">Reduction in Operating Costs</span>
-                    </div>
-                    <div class="result-content">
-                        <p class="result-quote">AI automates repetitive tasks like data entry, scheduling, and customer follow-ups. Your team gets to focus on work that actually moves the needle.</p>
-                    </div>
+                <div class="result-stat reveal">
+                    <div class="result-number" data-count="0" data-suffix="%">0%</div>
+                    <div class="result-label">Client Churn Rate</div>
+                    <div class="result-context">Every client who started is still with us.</div>
                 </div>
-                <div class="result-card fade-up">
-                    <div class="result-metric">
-                        <span class="result-number">3x</span>
-                        <span class="result-label">Faster Lead Response Time</span>
-                    </div>
-                    <div class="result-content">
-                        <p class="result-quote">AI-powered chatbots and email automation engage prospects instantly, before they move on to your competitor. Speed wins deals.</p>
-                    </div>
+                <div class="result-stat reveal reveal-delay-1">
+                    <div class="result-number" data-count="47" data-suffix="/mo">0/mo</div>
+                    <div class="result-label">Avg. Inbound Leads Per Client</div>
+                    <div class="result-context">From YouTube alone. No ads behind it.</div>
                 </div>
-                <div class="result-card fade-up">
-                    <div class="result-metric">
-                        <span class="result-number">10+</span>
-                        <span class="result-label">Hours Saved Per Employee Per Week</span>
-                    </div>
-                    <div class="result-content">
-                        <p class="result-quote">From AI-generated reports to automated invoicing, your team gets back the hours they're currently wasting on manual processes.</p>
-                    </div>
+                <div class="result-stat reveal reveal-delay-2">
+                    <div class="result-number" data-count="12" data-suffix="x">0x</div>
+                    <div class="result-label">Year-One Return on Investment</div>
+                    <div class="result-context">And it keeps compounding in year two.</div>
                 </div>
-                <div class="result-card fade-up">
-                    <div class="result-metric">
-                        <span class="result-number">60%</span>
-                        <span class="result-label">Better Customer Retention</span>
-                    </div>
-                    <div class="result-content">
-                        <p class="result-quote">AI predicts which customers are about to churn and triggers personalized outreach before it's too late. Keep more of the revenue you've already earned.</p>
-                    </div>
-                </div>
+            </div>
+            <div class="section-cta reveal" style="text-align:center; margin-top:48px;">
+                <a href="https://calendly.com/jeffrey-complexcollective/intro" target="_blank" class="btn btn-primary">Get Results Like These</a>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="section section-about" id="about">
+    <!-- ========== ABOUT / FOUNDER ========== -->
+    <section class="section section-mid" id="about">
         <div class="container">
             <div class="about-grid">
-                <div class="about-image-col">
-                    <div class="about-image-wrapper fade-up">
-                        <img src="martin-milligan-headshot.jpg" alt="Martin Milligan - AI Adoption Consultant" class="about-image">
-                        <div class="about-image-accent"></div>
+                <div class="about-image-wrapper reveal">
+                    <!-- Replace with Jeffrey's headshot -->
+                    <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px;text-align:center;padding:24px;">
+                        Headshot<br>Goes Here
                     </div>
                 </div>
-                <div class="about-text-col">
-                    <p class="section-eyebrow fade-up">Meet Martin</p>
-                    <h2 class="section-title fade-up">30 Years of Helping<br>Businesses Adapt</h2>
-                    <p class="about-text fade-up">I don't just talk about AI. I help businesses actually implement it. With 30 years of consulting and technical services experience, I've guided companies through every major technology shift, and AI is no different.</p>
-                    <p class="about-text fade-up">I work directly with business owners to identify where AI creates real value, build the implementation plan, and stay involved until your team is running with it. No theory. No fluff. Just results.</p>
-                    <div class="about-stats fade-up">
-                        <div class="stat">
-                            <span class="stat-number">30</span>
-                            <span class="stat-label">Years Consulting</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">100+</span>
-                            <span class="stat-label">AI Implementations</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">AI</span>
-                            <span class="stat-label">First Approach</span>
-                        </div>
-                    </div>
+                <div class="about-text">
+                    <p class="eyebrow reveal">Who's Behind This</p>
+                    <h2 class="section-title reveal reveal-delay-1">Jeffrey Han</h2>
+                    <p class="reveal reveal-delay-2">I've built YouTube growth systems for coaches and consultants across dozens of niches, from business coaching to health, finance, and high-ticket consulting. <strong>Every client who started with us is still with us.</strong></p>
+                    <p class="reveal reveal-delay-3">Before Complex Collective, I spent years in the trenches building lead gen infrastructure: custom scrapers, CRM pipelines, outbound systems. I know what it takes to acquire customers because I've done it every way possible. YouTube is the only channel I've seen that <strong>gets better the less you touch it.</strong></p>
+                    <p class="reveal reveal-delay-4">We're not a content agency that makes pretty videos. We're a growth partner that engineers your YouTube presence to attract the exact buyers you want, and we stake our reputation on post-execution results.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services / How It Works Section -->
-    <section class="section section-services" id="services">
+    <!-- ========== WHO THIS IS FOR ========== -->
+    <section class="section section-dark" id="qualify">
         <div class="container">
-            <div class="section-header">
-                <p class="section-eyebrow fade-up">How It Works</p>
-                <h2 class="section-title fade-up">AI Adoption,<br>Made Simple</h2>
-                <p class="section-subtitle fade-up">No hype. No black boxes. A clear path from where you are today to a business that runs smarter with AI.</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card fade-up">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.5"/><path d="M24 14v10l7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-                    </div>
-                    <h3 class="service-title">AI Readiness Audit</h3>
-                    <p class="service-desc">We assess your current operations, tech stack, and team workflows to identify exactly where AI will deliver the biggest ROI. Not where it sounds cool.</p>
+            <p class="eyebrow reveal">Who We Work With</p>
+            <h2 class="section-title reveal reveal-delay-1">This Works Best For a Specific Type of Business.</h2>
+            <p class="section-subtitle reveal reveal-delay-2">Not every business is ready for YouTube. Here's how to know if yours is.</p>
+
+            <div class="qualify-grid">
+                <div class="qualify-col reveal">
+                    <h3><span class="icon-yes">&#10003;</span> You're a fit if:</h3>
+                    <ul class="qualify-list">
+                        <li><span class="check">&#10003;</span> You're doing $50k+/month with a proven offer</li>
+                        <li><span class="check">&#10003;</span> You have at least one working acquisition channel already</li>
+                        <li><span class="check">&#10003;</span> You think in 1–5 year time horizons, not 30-day sprints</li>
+                        <li><span class="check">&#10003;</span> You want inbound leads who already trust you before the first call</li>
+                        <li><span class="check">&#10003;</span> You can commit a few hours per month to film (we handle the rest)</li>
+                    </ul>
                 </div>
-                <div class="service-card fade-up">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M16 28l6-8 4 5 6-9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </div>
-                    <h3 class="service-title">Custom AI Strategy</h3>
-                    <p class="service-desc">You get a prioritized roadmap with timelines, costs, and expected returns so you can make informed decisions instead of guessing.</p>
-                </div>
-                <div class="service-card fade-up">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 36V20m8 16V12m8 24V24m8 12V16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-                    </div>
-                    <h3 class="service-title">Workflow Automation</h3>
-                    <p class="service-desc">We implement AI tools that automate your most time-consuming tasks like lead follow-up, reporting, scheduling, and data entry so your team works on what matters.</p>
-                </div>
-                <div class="service-card fade-up">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.5"/><path d="M16 24h16M24 16v16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-                    </div>
-                    <h3 class="service-title">AI Tool Selection</h3>
-                    <p class="service-desc">There are thousands of AI tools out there. We cut through the noise and match you with the ones that actually solve your specific business problems.</p>
-                </div>
-                <div class="service-card fade-up">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 8v32M8 24h32" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="1.5"/><circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4"/></svg>
-                    </div>
-                    <h3 class="service-title">AI Integration</h3>
-                    <p class="service-desc">We connect AI tools directly into your existing systems. CRM, email, invoicing, project management. No ripping and replacing what already works.</p>
-                </div>
-                <div class="service-card fade-up">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="10" width="36" height="24" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M6 18h36M18 34v4M30 34v4M14 38h20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-                    </div>
-                    <h3 class="service-title">Team Training & Adoption</h3>
-                    <p class="service-desc">AI only works if your team uses it. We train your staff on the tools that matter, build internal champions, and ensure adoption sticks long after we leave.</p>
+                <div class="qualify-col reveal reveal-delay-1">
+                    <h3><span class="icon-no">&#10007;</span> Not the right fit if:</h3>
+                    <ul class="qualify-list">
+                        <li><span class="cross">&#10007;</span> You need leads in 30 days to keep the lights on</li>
+                        <li><span class="cross">&#10007;</span> You want viral videos or subscriber counts, not revenue</li>
+                        <li><span class="cross">&#10007;</span> You're under $50k/month (build that foundation first)</li>
+                        <li><span class="cross">&#10007;</span> You see YouTube as a hobby, not a growth channel</li>
+                        <li><span class="cross">&#10007;</span> You're not willing to be on camera</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Newsletter CTA Section -->
-    <section class="section section-newsletter" id="newsletter">
+    <!-- ========== FAQ ========== -->
+    <section class="section section-mid" id="faq">
         <div class="container">
-            <div class="newsletter-card fade-up">
-                <div class="newsletter-content">
-                    <p class="section-eyebrow">Stay Ahead</p>
-                    <h2 class="section-title">Get the AI<br>Adoption Playbook</h2>
-                    <p class="newsletter-desc">Weekly breakdowns of which AI tools are worth your time, how other businesses are using them, and step-by-step guides to implement them yourself.</p>
-                    <form class="newsletter-form" id="newsletterForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="text" name="firstName" placeholder="First name" required class="form-input">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" name="email" placeholder="Email address" required class="form-input">
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-submit">Subscribe</button>
-                        </div>
-                        <p class="form-disclaimer">No spam, ever. Unsubscribe anytime.</p>
-                    </form>
+            <div class="faq-header">
+                <p class="eyebrow reveal">Questions</p>
+                <h2 class="section-title reveal reveal-delay-1">Straight Answers.</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        How long until I see results from YouTube?
+                        <span class="faq-icon"></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Honest answer: 3–6 months for early traction, 6–12 months for consistent inbound leads. YouTube is a compounding asset. The ROI curve is slow at first, then accelerates. This is why we require clients to have an existing acquisition channel. YouTube is the long game that makes every other channel work better.</div>
+                    </div>
+                </div>
+                <div class="faq-item reveal reveal-delay-1">
+                    <button class="faq-question">
+                        What does the investment look like?
+                        <span class="faq-icon"></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">We work on a monthly retainer basis. The exact number depends on the scope: how many videos per month, the complexity of your niche, and what level of production you need. We'll cover all of this on the strategy call. If we're not the right fit, we'll tell you.</div>
+                    </div>
+                </div>
+                <div class="faq-item reveal reveal-delay-2">
+                    <button class="faq-question">
+                        What do I actually need to do?
+                        <span class="faq-icon"></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Film. That's it. We handle strategy, scripting, editing, thumbnails, SEO, publishing, and optimization. You bring your expertise and get on camera. We'll even coach you on delivery and framing so you look and sound like the authority you are.</div>
+                    </div>
+                </div>
+                <div class="faq-item reveal reveal-delay-3">
+                    <button class="faq-question">
+                        Why do I need to be doing $50k+/month?
+                        <span class="faq-icon"></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Two reasons. First, our services are a premium investment, so you need the revenue to support it without it being a financial strain. Second, YouTube is a 1–5 year play. If your business depends on getting results in the next 30 days, YouTube isn't the right channel yet. Get your foundation solid first, then come build the asset.</div>
+                    </div>
+                </div>
+                <div class="faq-item reveal reveal-delay-4">
+                    <button class="faq-question">
+                        How is this different from hiring a video editor?
+                        <span class="faq-icon"></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">A video editor makes your footage look nice. We engineer your entire YouTube presence, from what topics to cover, to how to position each video for your ideal buyer, to the SEO and optimization that makes the algorithm work for you. The editing is one piece. The strategy is where the leads come from.</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact / Footer -->
-    <footer class="footer" id="contact">
+    <!-- ========== FINAL CTA ========== -->
+    <section class="cta-section section-dark" id="book">
+        <div class="container">
+            <div class="cta-content">
+                <p class="eyebrow reveal">Limited Capacity</p>
+                <h2 class="section-title reveal reveal-delay-1">We Take On 2 New Clients Per Month.</h2>
+                <p class="section-subtitle reveal reveal-delay-2">Every client gets hands-on attention, so we cap our roster. Book a 30-minute strategy call to see if YouTube is the right move for your business. If it's not, we'll tell you.</p>
+                <div class="reveal reveal-delay-3" style="margin-top: 32px;">
+                    <a href="https://calendly.com/jeffrey-complexcollective/intro" target="_blank" class="btn btn-primary">Book Your Strategy Call</a>
+                    <p style="margin-top: 16px; font-size: 13px; color: var(--muted);">Free. No pitch. Just an honest conversation about your growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-brand fade-up">
-                    <a href="#" class="footer-logo">Digital Onramp <span>WSI</span></a>
-                    <p class="footer-tagline">AI Adoption for Business Growth</p>
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <svg class="nav-logo-icon" viewBox="-15 -15 230 230" width="36" height="36">
+                            <ellipse cx="100" cy="100" rx="90" ry="38" fill="none" stroke="#3A3D52" stroke-width="3" transform="rotate(-30 100 100)"/>
+                            <ellipse cx="100" cy="100" rx="90" ry="38" fill="none" stroke="#8B5CF6" stroke-width="3" transform="rotate(30 100 100)" opacity="0.5"/>
+                            <ellipse cx="100" cy="100" rx="90" ry="38" fill="none" stroke="#8B5CF6" stroke-width="3" transform="rotate(90 100 100)" opacity="0.3"/>
+                            <circle cx="100" cy="100" r="34" fill="#8B5CF6"/>
+                            <polygon points="91,83 91,117 118,100" fill="#FFFFFF"/>
+                            <circle cx="174" cy="58" r="7" fill="#8B5CF6"/><circle cx="174" cy="58" r="12" fill="#8B5CF6" opacity="0.15"/>
+                            <circle cx="26" cy="142" r="6" fill="#3B82F6"/><circle cx="26" cy="142" r="10" fill="#3B82F6" opacity="0.15"/>
+                            <circle cx="100" cy="10" r="5" fill="#A78BFA"/>
+                        </svg>
+                        <span class="nav-logo-text">Complex <span class="logo-accent">Collective</span></span>
+                    </a>
+                    <p class="footer-tagline">YouTube growth agency for coaches & consultants doing $50k+/month. We make you the authority your market can't ignore.</p>
                 </div>
-                <div class="footer-contact fade-up">
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <a href="#problem">Why YouTube</a>
+                    <a href="#how">How It Works</a>
+                    <a href="#results">Results</a>
+                    <a href="#about">About</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <div class="footer-col">
                     <h4>Contact</h4>
-                    <a href="tel:+13049000392">+1 (304) 900-0392</a>
-                    <a href="mailto:marty@digitalonrampwsi.com">marty@digitalonrampwsi.com</a>
-                </div>
-                <div class="footer-links fade-up">
-                    <h4>Connect</h4>
-                    <a href="https://www.digitalonrampwsi.com" target="_blank" rel="noopener">Website</a>
-                    <a href="#" target="_blank" rel="noopener">LinkedIn</a>
-                    <a href="#" target="_blank" rel="noopener">Facebook</a>
-                    <a href="#" target="_blank" rel="noopener">Twitter</a>
+                    <a href="mailto:jeffrey@complexcollective.io">jeffrey@complexcollective.io</a>
+                    <a href="https://complexcollective.io" target="_blank">complexcollective.io</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Digital Onramp WSI. All rights reserved.</p>
+                <p>&copy; 2026 Complex Collective. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
     <script src="animations.js"></script>
 </body>
 </html>

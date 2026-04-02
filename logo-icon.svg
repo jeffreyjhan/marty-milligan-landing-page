@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-15 -15 230 230" width="230" height="230">
+  <!-- Outer orbit ring -->
+  <ellipse cx="100" cy="100" rx="90" ry="38" fill="none" stroke="#3A3D52" stroke-width="2" transform="rotate(-30 100 100)"/>
+  <!-- Middle orbit ring -->
+  <ellipse cx="100" cy="100" rx="90" ry="38" fill="none" stroke="#8B5CF6" stroke-width="2" transform="rotate(30 100 100)" opacity="0.5"/>
+  <!-- Inner orbit ring -->
+  <ellipse cx="100" cy="100" rx="90" ry="38" fill="none" stroke="#8B5CF6" stroke-width="2" transform="rotate(90 100 100)" opacity="0.3"/>
+  <!-- Center circle with subtle gradient feel -->
+  <circle cx="100" cy="100" r="34" fill="#8B5CF6"/>
+  <circle cx="100" cy="100" r="34" fill="url(#centerGlow)" opacity="0.3"/>
+  <!-- Play button -->
+  <polygon points="91,83 91,117 118,100" fill="#FFFFFF"/>
+  <!-- Orbiting satellite 1 (top-right, largest) -->
+  <circle cx="174" cy="58" r="7" fill="#8B5CF6"/>
+  <circle cx="174" cy="58" r="12" fill="#8B5CF6" opacity="0.15"/>
+  <!-- Orbiting satellite 2 (bottom-left) -->
+  <circle cx="26" cy="142" r="6" fill="#3B82F6"/>
+  <circle cx="26" cy="142" r="10" fill="#3B82F6" opacity="0.15"/>
+  <!-- Orbiting satellite 3 (top) -->
+  <circle cx="100" cy="10" r="5" fill="#A78BFA"/>
+  <circle cx="100" cy="10" r="9" fill="#A78BFA" opacity="0.15"/>
+  <!-- Gradient definition -->
+  <defs>
+    <radialGradient id="centerGlow">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

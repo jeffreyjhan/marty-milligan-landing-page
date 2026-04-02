@@ -1,5 +1,8 @@
 [phases.setup]
-nixPkgs = ["python3"]
+nixPkgs = ["...", "nodejs"]
+
+[phases.build]
+cmds = ["echo 'Static site, no build needed'"]
 
 [start]
-cmd = "python3 -m http.server ${PORT:-8080}"
+cmd = "npx serve -s . -l $PORT"

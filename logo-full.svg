@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 60" width="540" height="60">
+  <!-- Orbital icon mark (scaled down) -->
+  <g transform="translate(2, 2) scale(0.28)">
+    <ellipse cx="100" cy="100" rx="90" ry="38" fill="none" stroke="#3A3D52" stroke-width="2.5" transform="rotate(-30 100 100)"/>
+    <ellipse cx="100" cy="100" rx="90" ry="38" fill="none" stroke="#8B5CF6" stroke-width="2.5" transform="rotate(30 100 100)" opacity="0.5"/>
+    <ellipse cx="100" cy="100" rx="90" ry="38" fill="none" stroke="#8B5CF6" stroke-width="2.5" transform="rotate(90 100 100)" opacity="0.3"/>
+    <circle cx="100" cy="100" r="34" fill="#8B5CF6"/>
+    <polygon points="91,83 91,117 118,100" fill="#FFFFFF"/>
+    <circle cx="174" cy="58" r="7" fill="#8B5CF6"/>
+    <circle cx="174" cy="58" r="12" fill="#8B5CF6" opacity="0.15"/>
+    <circle cx="26" cy="142" r="6" fill="#3B82F6"/>
+    <circle cx="26" cy="142" r="10" fill="#3B82F6" opacity="0.15"/>
+    <circle cx="100" cy="10" r="5" fill="#A78BFA"/>
+    <circle cx="100" cy="10" r="9" fill="#A78BFA" opacity="0.15"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="68" y="40" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-size="34" font-weight="800" letter-spacing="-1" fill="#FFFFFF">Complex <tspan fill="#8B5CF6">Collective</tspan></text>
+</svg>
